@@ -25,9 +25,9 @@ swiftc \
 
 install -m 644 "$project_dir/Info.plist" "$contents_dir/Info.plist"
 install -m 755 "$project_dir/headless_server.py" "$contents_dir/Resources/headless_server.py"
+install -m 644 "$project_dir/assets/FolderWeb.icns" "$contents_dir/Resources/FolderWeb.icns"
 
 codesign --force --deep --sign - "$app_dir"
 codesign --verify --deep --strict "$app_dir"
 
 echo "Built: $app_dir"
-

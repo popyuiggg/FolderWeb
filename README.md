@@ -1,5 +1,9 @@
 # FolderWeb
 
+<p align="center">
+  <img src="assets/folderweb-icon.png" width="180" alt="FolderWeb 图标">
+</p>
+
 FolderWeb 是一个轻量、只读的文件夹 HTTP 服务。它既可以把 `index.html` 作为网站首页，也可以把目录内容显示成适合下载的文件列表。
 
 项目包含原生 macOS 图形界面、Tk 图形界面和纯命令行服务端。
@@ -69,4 +73,3 @@ python3 headless_server.py --help
 ## 安全提示
 
 FolderWeb 本身只提供 HTTP，不包含登录认证和 TLS。监听 `0.0.0.0` 或做公网端口映射前，请确认所选目录中没有密码、密钥、隐私文件、`.env` 或其他不应公开的内容。需要公网长期使用时，建议放在 HTTPS 反向代理之后，并增加访问控制。
-
